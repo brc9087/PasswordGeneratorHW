@@ -5,6 +5,7 @@ var confirmUppercase;
 var confirmLowercase;
 var confirmCharacter;
 var choices = []
+var pwlength
 
 function generatePassword() {
 
@@ -21,13 +22,14 @@ function generatePassword() {
   alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
   //Prompts
-  enter = (prompt)("How many characters would you like your password to be? Enter between 8 and 128")
-  if (!enter) {
-    prompt("You need to enter a value in order to generate a password");
+  pwlength = parseInt(prompt("How many characters would you like your password to be? Enter between 8 and 128"))
+  if (!pwlength) {
+    alert("You need to enter a value in order to generate a password");
   }
   //parameter for choices, must be between 8 - 128
-  else if (parseInt(enter) < 8 && parseInt(enter) > 128) {
-    prompt = (prompt)("Your selection must be between 8 and 128");
+  else if (pwlength < 8 || pwlength > 128) {
+    alert("Your selection must be between 8 and 128");
+    generatePassword()
   }
   else {
     confirmNumber = confirm("Do you want a number in your password?");
@@ -60,7 +62,7 @@ function generatePassword() {
   var password = [];
 
   //for loop to iterate through array 
-  for (var i = 0; i < enter; i++) {
+  for (var i = 0; i < pwlength; i++) {
     var userChoice = choices[Math.floor(Math.random() * choices.length)];
     password.push(userChoice);
   }
