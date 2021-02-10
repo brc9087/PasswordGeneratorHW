@@ -1,35 +1,35 @@
 # Password Generator
 
-* This is a personal portfolio create using React. 
+* This is a random password generator app! The app will ask the user a series of questions:
+1. length of password (numeric input)
+2. validate length is between 8 and 128.
+3. type of characters to include - special characters uppercase, lowercase, numeric(series of yes/no confirms)
+4. Validate the user selected at least one character type.
 
 ## Usage / Directions
-* Click the link to check out my profile! ==> https://brc9087.github.io/portfolioreact/
+* Click the link to create a generate a random password! ==> https://brc9087.github.io/PasswordGeneratorHW/
 
-## About Page
-* ![](./src/images/aboutpage.PNG )
+## Home Page
+* ![](./images/homepage.PNG )
 
 <br>
 
-## Portfolio Page
-* ![](./src/images/portfolio.PNG)
+## Prompts / Preferences
+* ![](./images/prompts.PNG)
 
 <br>
     
-    
-## Contact Page
-*  ![](./src/images/contact.PNG)
+## Generated Password
+*  ![](./images/generated.PNG)
 
 <br>
 
 ## Tools Used / Dependancies
 --
-* React
-* react-router-dom
-* Third Party Hooks
 * JS
-* Github
-* images
+* HTML
+* CSS
 
 ## Links
-<!-- * APP: https://brc9087.github.io/portfolioreact/ -->
-<!-- * REPO: https://github.com/brc9087/portfolioreact -->
+* APP: https://brc9087.github.io/PasswordGeneratorHW/ -->
+* REPO: https://github.com/brc9087/PasswordGeneratorHW
